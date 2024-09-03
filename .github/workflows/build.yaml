@@ -422,7 +422,7 @@ jobs:
           jfrog rt ping
 
       - name: Download Plenum Artifacts from Pipeline Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: plenum-deb
           path: to_publish
@@ -451,7 +451,7 @@ jobs:
           component: ${{ env.GITHUB_REF }}
 
       - name: Download Python Packages from Pipeline Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: plenum-python
           path: dist
